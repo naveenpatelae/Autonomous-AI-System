@@ -339,10 +339,9 @@ GESTURE_GUARD_PATCH = '''\
 import sys as _sys
 if _sys.version_info >= (3, 14):
     _GESTURE_OK = False
-    print(
-        "⚠️  [GestureTracker] Python 3.14+ detected. mediapipe requires Python ≤3.12.\\n"
-        "   Fix: brew install python@3.12 && python3.12 -m venv .venv && source .venv/bin/activate\\n"
-        "   Then re-run: python swayambhu_v13.py"
+    print("⚠️  [GestureTracker] Python 3.14+ detected. mediapipe requires Python ≤3.12.\\n"
+          "   Fix: brew install python@3.12 && python3.12 -m venv .venv && source .venv/bin/activate\\n"
+          "   Then re-run: python swayambhu_body.py"
     )
 else:
     try:
